@@ -80,7 +80,7 @@ function App() {
       <Router>
           <Headers title="Daily Events" searchbar={false} searchFun={changeSearchTxt}/>
           <Switch>
-            <Route exact path="/" render = {()=>{
+            <Route exact path="https://bhupinder2121221.github.io/upcommingevent/" render = {()=>{
               return (
                 <>
                 <AddButton name={addbtnName} addbutton ={changeaddbuttonclicked}/>
@@ -90,7 +90,7 @@ function App() {
               )
             }}>
             </Route>
-            <Route exact path="/about" render={()=>{
+            <Route exact path="https://bhupinder2121221.github.io/upcommingevent/about" render={()=>{
               return(
                 <>
                 <AboutPage/>
