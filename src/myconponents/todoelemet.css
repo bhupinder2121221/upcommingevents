@@ -1,0 +1,22 @@
+.todoelement {
+    max-width: 50vw;
+    animation: entry 0.5s ease-in 0s 1;
+}
+@keyframes entry {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+.nodatapic {
+    margin: auto;
+    text-align: center;
+    height: 400px;
+
+}
