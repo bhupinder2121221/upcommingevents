@@ -80,17 +80,8 @@ function App() {
       <Router>
           <Headers title="Daily Events" searchbar={false} searchFun={changeSearchTxt}/>
           <Switch>
-            <Route exact path="/upcommingevent/" render = {()=>{
-              return (
-                <>
-                <AddButton name={addbtnName} addbutton ={changeaddbuttonclicked}/>
-                {addbuttonclicked?<Addtodo adding={addTodolist}/>:""}
-                {upcomingEvents? <Todoarea todo = {todolistwork} ondelete ={onDelete} /> : ""}
-                </>
-              )
-            }}>
-            </Route>
-            <Route exact path="/upcommingevent/about" render={()=>{
+            
+            <Route exact path="/about" render={()=>{
               return(
                 <>
                 <AboutPage/>
@@ -102,6 +93,16 @@ function App() {
               return(
                 <>
                 <Searchcomponent searchtxt ={searchTxt} todolist = {todolistwork}/>
+                </>
+              )
+            }}>
+            </Route>
+              <Route exact path="/" render = {()=>{
+              return (
+                <>
+                <AddButton name={addbtnName} addbutton ={changeaddbuttonclicked}/>
+                {addbuttonclicked?<Addtodo adding={addTodolist}/>:""}
+                {upcomingEvents? <Todoarea todo = {todolistwork} ondelete ={onDelete} /> : ""}
                 </>
               )
             }}>
