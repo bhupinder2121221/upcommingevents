@@ -81,7 +81,7 @@ function App() {
           <Headers title="Daily Events" searchbar={false} searchFun={changeSearchTxt}/>
           <Switch>
             </Route>
-              <Route exact path="/" render = {()=>{
+              <Route  path="/" render = {()=>{
               return (
                 <>
                 <AddButton name={addbtnName} addbutton ={changeaddbuttonclicked}/>
