@@ -80,7 +80,8 @@ function App() {
       <Router>
           <Headers title="Daily Events" searchbar={false} searchFun={changeSearchTxt}/>
           <Switch>
-            <Route exact path="/" render = {()=>{
+            </Route>
+              <Route  path="/" render = {()=>{
               return (
                 <>
                 <AddButton name={addbtnName} addbutton ={changeaddbuttonclicked}/>
@@ -105,7 +106,7 @@ function App() {
                 </>
               )
             }}>
-            </Route>
+            
           </Switch>
             
           <Footer/>

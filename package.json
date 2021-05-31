@@ -1,6 +1,10 @@
 {
   "name": "netflic-clone",
+<<<<<<< HEAD
   "homepage": "https://bhupinder2121221.github.io/upcommingevent",
+=======
+   "homepage": "http://https://bhupinder2121221.github.io/upcommingevent",
+>>>>>>> 3f270f7d688ddbeeecae392e518185f2fe6e2c6e
   "version": "0.1.0",
   "private": true,
   "dependencies": {
